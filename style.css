@@ -1,7 +1,7 @@
 @import url("https://use.typekit.net/jmk3xov.css");
 
 canvas {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
 }
@@ -43,6 +43,10 @@ canvas {
   left: 0;
 }
 
+header, section {
+  border-radius: 20px;
+}
+
 header {
   background: var(--dark-bg);
   grid-column: 2 / span 5;
@@ -59,6 +63,12 @@ section {
   line-height: 1.5;
   margin-bottom: var(--spacing);
 }
+
+@media (max-width: 1020px) {
+  section {
+    grid-column: 6;
+  }
+};
 
 blockquote {
   margin: 0;
